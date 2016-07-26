@@ -1,0 +1,36 @@
+{
+    "name": "OpenWebAddict/social-stream",
+    "description": "A social stream hub",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.0",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "jakub-onderka/php-parallel-lint": "0.8.*"
+    },
+    "keywords": [
+        "social",
+        "network",
+        "stream",
+        "tweet",
+        "post"
+    ],
+    "authors": [
+        {
+            "name": "Alan Moreau",
+            "email": "alan@openwebaddict.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OpenWebAddict\\SocialStream\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenWebAddict\\SocialStream\\Test\\": "test/src/"
+        }
+    },
+}
