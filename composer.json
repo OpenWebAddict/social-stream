@@ -4,9 +4,13 @@
     "license": "MIT",
     "require": {
         "php": ">=5.5.0",
+        "facebook/php-sdk-v4": "5.2.0",
+        "j7mbo/twitter-api-php": "1.0.5",
+        "guzzlehttp/guzzle": "~5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
+        "friendsofphp/php-cs-fixer": "^1.9",
         "jakub-onderka/php-parallel-lint": "0.8.*"
     },
     "keywords": [
@@ -23,6 +27,11 @@
             "role": "Developer"
         }
     ],
+    "scripts": {
+        "test": "phpunit --coverage-text; php-cs-fixer fix -v --diff --dry-run;",
+        "phpunit": "phpunit --coverage-text",
+        "phpcs": "php-cs-fixer fix -v --diff --dry-run;"
+    },
     "autoload": {
         "psr-4": {
             "OpenWebAddict\\SocialStream\\": "src/"
@@ -30,7 +39,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "OpenWebAddict\\SocialStream\\Test\\": "test/src/"
+            "OpenWebAddict\\SocialStream\\Test\\": "test/"
         }
-    },
+    }
 }
